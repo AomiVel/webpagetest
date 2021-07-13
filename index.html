@@ -5,6 +5,11 @@
         <title>YouPIP For iPhone</title>
     </head>
     <body>
+        <p>
+            <label>名前：<input type="text" id="nameText"></label>
+            <input type="button" value="Check" id="checkButton">
+        </p>
+        <p id="msg"></p>
         <script>
             function butotnClick(){
               msg.innerText = 'お名前は' + nameText.value + 'さんですね';
