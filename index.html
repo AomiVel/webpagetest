@@ -11,12 +11,13 @@
         </p>
         <p id="msg"></p>
         <script>
-            function butotnClick(){
-                width = 500
-                height = 500
-                url = "https://r1---sn-nvoxu-ioqd.googlevideo.com/videoplayback?expire=1626406769&ei=EavwYI3tK_uK1d8P1ciueA&ip=240d%3A1c%3A13d%3Ae300%3A2029%3Aac0e%3Abfcb%3Ae957&id=o-AFB4C1vaVMRfKwSZYN-PA-ks2Pfg9BjgpPLQgrN7PRCl&itag=18&source=youtube&requiressl=yes&mh=il&mm=31%2C29&mn=sn-nvoxu-ioqd%2Csn-3pm7sn7d&ms=au%2Crdu&mv=m&mvi=1&pl=32&initcwndbps=1506250&vprv=1&mime=video%2Fmp4&ns=aEuO-DPmLwENc4GHH4aSQ6wG&gir=yes&clen=125981621&ratebypass=yes&dur=5271.231&lmt=1620285048572870&mt=1626384794&fvip=1&fexp=24001373%2C24007246&beids=9466587&c=WEB&txp=5530422&n=9l1gzjF9gzvbmGKXzx&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgUiIRbjmcCL5PzYWdpN462yu-U4N-6uIfpWNJxW-UeWgCIEQ2PQ-USPr5Zw_6q4eoKc-QZVpxMxX2OLuym07Ejt3w&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgafZafF242IjCjSJXTTT60PYDCvpfShmgV4SW_NGoWO4CIAdxJRVkqtEj5x-gYjFLW2o_shaLOi8jI9yfaT6jnG9D"
-                h = `<iframe width="${width}"height="${height}"src="${url}"frameborder="0"allowfullscreen></iframe>`
-              msg.innerHTML = html
+            function buttonClick(){
+                nameText.value = "";
+                width = 500;
+                height = 500;
+                url = "https://r1---sn-nvoxu-ioqd.googlevideo.com/videoplayback?expire=1626406769&ei=EavwYI3tK_uK1d8P1ciueA&ip=240d%3A1c%3A13d%3Ae300%3A2029%3Aac0e%3Abfcb%3Ae957&id=o-AFB4C1vaVMRfKwSZYN-PA-ks2Pfg9BjgpPLQgrN7PRCl&itag=18&source=youtube&requiressl=yes&mh=il&mm=31%2C29&mn=sn-nvoxu-ioqd%2Csn-3pm7sn7d&ms=au%2Crdu&mv=m&mvi=1&pl=32&initcwndbps=1506250&vprv=1&mime=video%2Fmp4&ns=aEuO-DPmLwENc4GHH4aSQ6wG&gir=yes&clen=125981621&ratebypass=yes&dur=5271.231&lmt=1620285048572870&mt=1626384794&fvip=1&fexp=24001373%2C24007246&beids=9466587&c=WEB&txp=5530422&n=9l1gzjF9gzvbmGKXzx&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgUiIRbjmcCL5PzYWdpN462yu-U4N-6uIfpWNJxW-UeWgCIEQ2PQ-USPr5Zw_6q4eoKc-QZVpxMxX2OLuym07Ejt3w&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgafZafF242IjCjSJXTTT60PYDCvpfShmgV4SW_NGoWO4CIAdxJRVkqtEj5x-gYjFLW2o_shaLOi8jI9yfaT6jnG9D";
+                h = `<iframe width="${width}"height="${height}"src="${url}"frameborder="0"allowfullscreen></iframe>`;
+                msg.innerHTML = h;
             }
 
             let nameText = document.getElementById('nameText');
@@ -24,7 +25,7 @@
             let msg = document.getElementById('msg');
 
             let checkButton = document.getElementById('checkButton');
-            checkButton.addEventListener('click', butotnClick);
+            checkButton.addEventListener('click', buttonClick);
         </script>
     </body>
 </html>
